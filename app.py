@@ -30,6 +30,13 @@ LOADING_MESSAGES = [
     "Integrating information across departments...",
 ]
 
+# Initialize session state attributes if they do not exist
+if "last_trained" not in st.session_state:
+    st.session_state.last_trained = None
+
+if "files_ingested" not in st.session_state:
+    st.session_state.files_ingested = 0
+
 
 @st.cache_resource(show_spinner=False)
 def build_qa_chain(files):
