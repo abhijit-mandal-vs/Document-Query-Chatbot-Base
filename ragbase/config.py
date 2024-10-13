@@ -16,6 +16,7 @@ class Config:
         EMBEDDINGS = "BAAI/bge-base-en-v1.5"
         RERANKER = "ms-marco-MiniLM-L-12-v2"
         LOCAL_LLM = "llama3.2:1b"
+        # LOCAL_LLM = "llama3.2:3b"
         REMOTE_LLM = "llama-3.1-70b-versatile"
         # REMOTE_LLM = "llama-3.1-8b-instant"
         TEMPERATURE = 0.0
